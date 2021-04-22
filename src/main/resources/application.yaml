@@ -6,3 +6,5 @@ spring:
   batch:
     initialize-schema: always
     schema: classpath:/org/springframework/batch/core/schema-mysql.sql
+    job:
+      names: ${job.name:NONE}
